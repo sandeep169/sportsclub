@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+    li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+</style>
+    <meta charset="UTF-8">
+    <title>TournamentPage</title>
+</head>
+<body>
+{% extends 'base.html' %}
+{%load static %}
+{% block content %}
+<h1>we are in tournament</h1>
+   <ul>
+
+             <li> <a href="home">Home</a></li>
+             <li><a href="TournamentIndex">Tournament</a></li>
+             <li><a href="TableTennisFn"> TableTennis</a></li>
+             <li><a href="CricketFn" >Cricket</a> </li>
+             <li ><a href="ChessFn" >chess </a></li>
+             <li><a href="BadmintonFn">Badminton </a></li>
+             <li><a href="addTour">AddTournament </a></li>
+   </ul>
+
+
+             {% for tour in obj %}
+    <br>
+            tournament name :{{tour.tour_name}}<br>
+            venue:{{tour.venue}}<br>
+            Starting Date :{{tour.tour_start_date}}<br>
+            Prize :{{tour.prize}}<br>
+            Discription :{{tour.description}}<br>
+            Maximum Team :{{tour.total_team}}<br>
+            Closing Date :{{tour.reg_close_date}}<br>
+            Organised by : {{tour.organiser_name}}<br>
+           {%if tour.tour_img%}
+            <img src="{{ tour.tour_img.url }}"   height="300">
+            {%endif%}
+
+     {% endfor %}
+
+
+{% endblock%}
+</body>
+</html>

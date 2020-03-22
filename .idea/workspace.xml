@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7fc440ca-f40e-46f7-9d49-92f4a0d336bb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1XnCRgOxGkV4iUBJB9lVUbXlYsU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="aDefault" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\PythonTraining\polls\Pages" />
+      <recent name="E:\PythonTraining\polls\Tournament" />
+      <recent name="E:\PythonTraining\polls\tournament" />
+      <recent name="E:\PythonTraining\polls\accounts" />
+      <recent name="E:\PythonTraining\polls\travello" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\PythonTraining\polls" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="polls" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tournament" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tournament/alina.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7fc440ca-f40e-46f7-9d49-92f4a0d336bb" name="Default Changelist" comment="" />
+      <created>1581672464058</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581672464058</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Tournament model working successfully now">
+      <created>1583748713431</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1583748713431</updated>
+    </task>
+    <task id="LOCAL-00002" summary="form.py added, but  not created">
+      <created>1584817093690</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1584817093690</updated>
+    </task>
+    <task id="LOCAL-00003" summary="form.py added, but  not created">
+      <created>1584817695005</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584817695005</updated>
+    </task>
+    <task id="LOCAL-00004" summary="forms.py added, event can be organised">
+      <created>1584818957844</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1584818957844</updated>
+    </task>
+    <task id="LOCAL-00005" summary="forms.py added, events can be organised">
+      <created>1584820087391</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1584820087391</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add tournament modified">
+      <created>1584826577336</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1584826577336</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add tournament modified">
+      <created>1584826968212</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1584826968212</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add tournament modified">
+      <created>1584870940510</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1584870940510</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Tournament model working successfully now" />
+    <MESSAGE value="form.py added, but  not created" />
+    <MESSAGE value="forms.py added, event can be organised" />
+    <MESSAGE value="forms.py added, events can be organised" />
+    <MESSAGE value="add tournament modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="add tournament modified" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584868092708">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1584868092708" />
+    <state x="399" y="212" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1583247710483">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="399" y="212" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1583247710483" />
+    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1584870936912">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1584870936912" />
+    <state x="80" y="50" width="1024" height="572" key="DiffContextDialog" timestamp="1584868258134">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="80" y="50" width="1024" height="572" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1584868258134" />
+    <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1584864925303">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584864925303" />
+    <state width="1259" height="156" key="GridCell.Tab.0.bottom" timestamp="1583251918023">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="156" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1583251918023" />
+    <state width="1259" height="156" key="GridCell.Tab.0.center" timestamp="1583251918022">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="156" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1583251918022" />
+    <state width="1259" height="156" key="GridCell.Tab.0.left" timestamp="1583251918022">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="156" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1583251918022" />
+    <state width="1259" height="156" key="GridCell.Tab.0.right" timestamp="1583251918023">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1259" height="156" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1583251918023" />
+    <state x="466" y="52" key="RollbackChangesDialog" timestamp="1583740339449">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="466" y="52" key="RollbackChangesDialog/0.0.1280.680@0.0.1280.680" timestamp="1583740339449" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1584870797013">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1584870797013" />
+    <state x="244" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583149732522">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="244" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.680@0.0.1280.680" timestamp="1583149732522" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1584868030312">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1584868030312" />
+  </component>
+</project>

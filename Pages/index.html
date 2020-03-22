@@ -1,0 +1,119 @@
+{% load static %}
+{% static "images" as baseURL %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>SportClub</title>
+
+	<style>
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: grey;
+}
+    li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+</style>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/main_styles.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css' %}">
+</head>
+
+<body>
+
+	<div class="super_container">
+
+		<!-- Header -->
+
+
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="header_content d-flex flex-row align-items-center justify-content-start">
+							<div class="header_content_inner d-flex flex-row align-items-end justify-content-start">
+								<div class="logo"><a href="">SportClub</a></div>
+								<nav class="main_nav">
+									<ul class="d-flex flex-row align-items-start justify-content-start">
+										<li class="active"><a href="">Home</a></li>
+										<li><a href="tournament/">Tournament</a> </li>
+										{%if user.is_authenticated %}
+										<li> <a href=""> Hello {{user.first_name }}</a></li>
+										<li > <a href="accounts/logout">logout</a> </li>
+										{%else%}
+										<li > <a href="accounts/register">Register</a> </li>
+										<li > <a href="accounts/login">Login</a> </li>
+										{%endif%}
+										</ul>
+								</nav>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+<!-- Destinations -->
+		<div class="destinations" id="destinations">
+			<div class="container">
+				<div class="row">
+					<div class="col text-center">
+						<div class="section_subtitle">Choose Your Game </div>
+						<div class="section_title">
+							<h2>Tournamnets to be Schedule</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row destinations_row">
+					<div class="col">
+						<div class="destinations_container item_grid">
+						{% for dest in dests %}
+							<!-- Destination -->
+							<div class="destination item">
+								<div class="destination_image">
+									<img src="{{dest.img.url}}" alt="" height="200" weidth="300">
+								</div>
+								    <div class="destination_content">
+								     	<div class="destination_title"><a href="#">{{dest.name}}</a></div>
+											<div class="destination_subtitle">
+										    <h2><p>{{dest.desc}}</p></h2>
+									</div>
+								</div>
+							</div>
+						{% endfor %}
+
+{% for tour in a %}
+<img src="{{tour.imgs.url}}" >
+{% endfor %}
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+</body>
+
+</html>
