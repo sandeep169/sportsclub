@@ -110,7 +110,7 @@ def addChess(request):
     return render(request, 'addTournament.html', {'form': form})
 
 def addTT(request):
-
+    form = AddTournament()
     if request.method == 'POST':
 
         form = AddTournament(request.POST, request.FILES)
