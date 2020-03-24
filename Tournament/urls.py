@@ -12,7 +12,7 @@ urlpatterns = [
                 path('ChessFn', views.ChessFn, name='home'),
                 path('CricketFn', views.CricketFn, name='home'),
 
-
+                path('participate',views.participate,name='GameParticipation'),
 
                 path('addTour',views.addTour),
                 path('badminton', views.addBadmintion),

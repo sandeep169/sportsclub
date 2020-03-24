@@ -12,7 +12,13 @@ class AddTournament(forms.Form) :
     tour_img = forms.ImageField(required=False)
 
 
-# class AddChess(forms.Form) :
+class Participate(forms.Form) :
+       name = forms.CharField(max_length=100)
+       age = forms.IntegerField()
+       gender = forms.CheckboxSelectMultiple()
+       add = forms.CharField(widget=forms.Textarea)
+       ph_no = forms.IntegerField()
+
 #     tour_name = forms.CharField(max_length=100)
 #     venue = forms.CharField(widget=forms.Textarea)
 #     tour_start_date = forms.DateField()

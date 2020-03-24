@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fc440ca-f40e-46f7-9d49-92f4a0d336bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Pages/participate.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/tournament.html" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/tournament.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tournament/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tournament/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tournament/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tournament/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tournament/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tournament/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tournament/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tournament/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,14 +176,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="399" y="212" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1583247710483" />
-    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1584870936912">
+    <state x="255" y="0" key="CommitChangelistDialog2" timestamp="1584906760343">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1584870936912" />
-    <state x="80" y="50" width="1024" height="572" key="DiffContextDialog" timestamp="1584868258134">
+    <state x="255" y="0" key="CommitChangelistDialog2/0.0.1280.680@0.0.1280.680" timestamp="1584906760343" />
+    <state x="80" y="50" width="1024" height="572" key="DiffContextDialog" timestamp="1584906680782">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="80" y="50" width="1024" height="572" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1584868258134" />
+    <state x="80" y="50" width="1024" height="572" key="DiffContextDialog/0.0.1280.680@0.0.1280.680" timestamp="1584906680782" />
     <state x="421" y="96" key="FileChooserDialogImpl" timestamp="1584864925303">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

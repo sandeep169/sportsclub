@@ -48,3 +48,10 @@ class Badminton(models.Model):
         description = models.TextField(blank=True)
         total_team = models.IntegerField(blank=True, null=True)
         tour_img = models.ImageField(upload_to='badminton/%Y/%m/%d/',blank=True)
+
+class Participation(models.Model):
+        p_name = models.CharField(max_length=100)
+        p_age = models.IntegerField()
+      #  p_gender = models.Choices()
+        p_add = models.TextField()
+        p_ph_no = models.IntegerField()

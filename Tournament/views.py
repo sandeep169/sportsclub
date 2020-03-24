@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import TableTennis,Badminton,Chess,Cricket
-from .forms import  AddTournament
+from .forms import  AddTournament , Participate
 # AddTableTennis,AddTournament,AddChess,AddCricket
 
 #function name should not be same with your module name defined in module.py
@@ -132,3 +132,8 @@ def addTT(request):
             return redirect('/tournament/tt')
 
     return render(request, 'addTournament.html', {'form': form})
+
+def participate(request):
+    part = Participate()
+
+    return render(request,'participate.html',{'part':part})
