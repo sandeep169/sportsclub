@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+{% load static %}
+<!--{% static "images" as baseURL %}   : for static path of images-->
+<html lang="en">
+<head>
+	<title>SportClub</title>
+<!--<style>
+    ul { list-style-type: none;  margin: 0;  padding: 0;  overflow: hidden;  background-color: grey; }
+    li { float: left;	}
+	li a {display: block;  color: white;  text-align: center; padding: 16px;  text-decoration: none; }
+	li a:hover {  background-color: #111111; } </style> -->
+	<meta charset="utf-8">
+<!--	<meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'styles/style.css' %}">
+<!--	<script  href="{% static 'styles/bootstrap4/bootstrap.min.js' %}"> </script>-->
+<!--	<script  href="{% static 'styles/bootstrap4/proper.js' %}"> </script>-->
+<!--	<link rel="stylesheet" type="text/css" href="{% static 'styles/responsive.css' %}">-->
+	<!-- from internet-->
+<!--	<link clrel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">-->
+<!--	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+
+<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>-->
+<!--		&lt;!&ndash; Latest compiled JavaScript &ndash;&gt;-->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class='bgimg'>
+		<!-- NavBar : it will show vertically nav dbar when screen size get small -->
+		<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+			<div class="container">
+				<a href="" class="navbar-brand text-warning	font-weight-bold">Sports Club</a>
+
+			<!-- when size get small button will display side button-->
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#collapsenavbar" >
+					<span class="navbar-toggler-icon"> </span>
+				</button>
+				<!-- navigation bar button -->
+				<div class="collapse navbar-collapse text-center" id="collapsenavbar">
+					<!-- text will in center in dec screen size -->
+
+					<ul class="navbar-nav ml-auto" >
+						<!-- margin left(ml)- auto , it will text in right side of nav bar when screen is full -->
+						<li class="nav-it">
+							<a href="" class="nav-link text-white" > Home</a>
+						</li>
+						<li class="nav-it">
+							<a href="tournament/" class="nav-link text-white">Tournament
+							</a>
+						</li>
+						<li class="nav-it">
+							<a href="" class="nav-link text-white " > Services</a>
+						</li>
+						<li class="nav-it">
+							<a href="" class="nav-link text-white " > About</a>
+						</li>
+						<li class="nav-it">
+							<a href="" class="nav-link text-white " > Contact</a>
+						</li>
+						{%if user.is_authenticated %}
+						<li class="nav-it">
+							<a href=""  class="nav-link text-white ">Hello {{user.first_name }}
+							</a>
+						</li>
+						<li class="nav-it">
+							<a href="accounts/logout"  class="nav-link text-white ">logout</a>
+						</li>
+						{%else%}
+						<li class="nav-it">
+							<a href="accounts/register" class="nav-link text-white">Register</a>
+						 </li>
+						<li class="nav-it">
+							<a href="accounts/login " class="nav-link text-white ">Login
+							</a>
+						</li>
+						{%endif%}
+					</ul>
+				</div> <!-- end of navigation bar buttons -->
+			</div><!--end of container class -->
+		</nav>
+
+		<!-- hearderset for fisrt div section-->
+		<div class="container text-center text-white hearderset">
+				<h1> Welcome To Sports Club</h1>
+				<h2>Enjoy Your Gaming Area </h2>
+
+<!--				<button class="btn btn-warning text-white btn-lg" type="button"> Welcome</button>-->
+		</div>
+</div> <!-- end of first div class= bgimagem-->
+	<!-- end of header-->
+
+
+<!-- Upcoming -->
+<section class="upcoming" >
+
+   	<div class = "container text-center">
+   		<h2 style="font-weight: bold;"> Tournamnets to be Schedule</h2>
+   				<h3 style="font-weight: bold;">Choose Your Game </h3>
+   		<div class="row teamsetting">
+   			{% for dest in dests %}
+				<div class="col-lg-4 col-md-4 col-sm-12 col-10 d-block m-auto">
+					 <!--col 10 is for mobile view & smallest is 12-->
+
+					<div class="card">
+					  <img src="{{dest.img.url}}" class="card-img  img-fluid">
+						<div class="card-body">
+							<h2 class="card-title"> {{dest.name}}</h2>
+							<p class="card-text"> {{dest.desc}}</p>
+
+						</div>
+					</div>
+				</div> <!-- end of first col -->
+			{% endfor %}
+		</div><!-- end of row setting div -->
+   </div>
+</section>
+
+
+</body>
+
+</html>

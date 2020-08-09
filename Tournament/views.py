@@ -137,3 +137,10 @@ def participate(request):
     part = Participate()
 
     return render(request,'participate.html',{'part':part})
+
+def delete(request):
+    pass
+
+def update(request):
+    pass
+

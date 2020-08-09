@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'accounts.apps.AccountsConfig',
-    'Home.apps.HomeConfig',
+    'home.apps.HomeConfig',
     #'accounts',
     'Tournament.apps.TournamentConfig'
 ]
@@ -58,7 +58,7 @@ ROOT_URLCONF = 'sportsclub.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'Pages')],
+        'DIRS': [os.path.join(BASE_DIR,'pages')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -124,14 +124,22 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-#join the base file woth static file
+#join the base file with static file
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
             os.path.join(BASE_DIR,'static')
 ]
+#The STATICFILES_DIRS tuple tells Django where to look for static files that are not tied to a particular app.
+#In this case, we just told Django to also look for static files in a folder
+# called static in our root folder, not just in our apps.
 
-#this will create folder with name assets where all file of static folder will copy in project api folder
-STATIC_ROOT = os.path.join(BASE_DIR,'assets')
+#this will create folder with name template where all file of static folder will copy in project api folder
+STATIC_ROOT = os.path.join(BASE_DIR,'template')
+#Django also provides a mechanism for collecting static files into one place so that they can be served easily.
+# Using the collectstatic command, Django looks for all static files in your apps and collects them wherever you told
+# it to, i.e. the STATIC_ROOT.In our case, we are telling Django that when we run python manage.py collectstatic,
+# gather all static files into a folder called staticfiles in our project root directory.
+#python manage.py collectstatic :This will copy all files from your static folders into the STATIC_ROOT directory.
 #for media
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 #url which we are going to use in views or template

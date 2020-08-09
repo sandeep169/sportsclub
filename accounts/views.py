@@ -11,6 +11,7 @@ def register(request) :
                 password1 = request.POST['password1']
                 password2 = request.POST['password2']
                 email = request.POST['email']
+
                 if password1 == password2:
                       if User.objects.filter(username=username).exists():
                             messages.info(request,"user name is taken ,try other username")
@@ -28,7 +29,8 @@ def register(request) :
                 else :
                         messages.info(request,"password not matching")
                         return redirect('register')
-                return redirect('/')
+
+                # return redirect('/')
 
         else :
                 return render(request,'register.html')

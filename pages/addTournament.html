@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap4/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/style.css' %}">
+    <title>add events</title>
+
+
+</head>
+<body>
+<div>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark" >
+        <div class ="container">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-it">
+                    <a href="home" class="nav-link text-white" >Home</a>
+                </li>
+                <li class="nav-it">
+                    <a href="TournamentIndex" class="nav-link text-white" >Tournament</a>
+                </li>
+                {%if user.is_authenticated %}
+						<li class="nav-it">
+							<a href=""  class="nav-link text-white ">Hello {{user.first_name }}
+							</a>
+						</li>
+						<li class="nav-it">
+							<a href="accounts/logout"  class="nav-link text-white ">logout</a>
+						</li>
+                {% endif %}
+            </ul>
+        </div>
+    </nav>
+</div>
+
+
+<div style="border-radius: 5px;background-color: #f2f2f2;padding: 20px;width:30%;">
+     <form method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.as_p }}
+            <button type ='submit'>Submit</button>
+     </form>
+</div>
+
+</body>
+</html>
